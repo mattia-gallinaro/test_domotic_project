@@ -18,7 +18,7 @@
             std::string time_log = convert_time(time);
             s = "[" + time_log+"] Il dispositivo '"+ name+ "["+ std::to_string(ID) + "]' si è acceso\n";
         }
-        else s = "Dispositivo '"+ name+ "["+ std::to_string(ID) + "]' già spento\n";
+        else s = "Dispositivo '"+ name+ "["+ std::to_string(ID) + "]' già acceso\n";
         return s;
  }
 /*

@@ -39,7 +39,7 @@ int main(int argc, char* argv[]){
 
     ControlSystem cs(std::stod(test), val);
 
-    while(cs.dayFinished()){
+    while(!cs.dayFinished()){
         std::cout << "Inserisci un comando" << std::endl;
         try{
             std::getline(std::cin, test);

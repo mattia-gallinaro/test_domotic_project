@@ -1,0 +1,6 @@
+[0:0] Il dispositivo 'Impianto fotovoltaico[0]' si è acceso
+
+[23:59] L'orario attuale e' 23:59
+[00:00] Il dispositivo 'Impianto fotovoltaico[0]' si è acceso
+
+[23:59] L'orario attuale e' 23:59

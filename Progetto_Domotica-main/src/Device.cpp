@@ -55,8 +55,10 @@ std::string Device::get_name(void) const {
 // helper functions
 
 std::string convert_time(unsigned int time){
-    unsigned int hours = time/60;
-    unsigned int minutes = time%60;
+    std::string hours = std::to_string(time/60);
+    if(std::stoi(hours) < 10) hours = "0" + hours;
+    std::string minutes = std::to_string(time%60);
+    if(std::stoi(minutes) < 10) minutes = "0" + minutes;
     std::string time_converted = hours + ":" + minutes;
     return time_converted;
 };
