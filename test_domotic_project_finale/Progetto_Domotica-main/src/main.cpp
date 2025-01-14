@@ -1,4 +1,5 @@
-//verranno eliminati gli include tra poco (devo fare le include guards solo)
+//autore Mattia Gallinaro
+
 #include<string>
 #include<list>
 #include<vector>
@@ -27,6 +28,7 @@ int main(int argc, char* argv[]){
         }
     }
     bool done = false;
+    //serve per inserire una stringa da terminale fino a quando non si specifica un valore positivo da assegnare alla contribuzione energetica del impianto fotovoltaico
     while(!done){
         output = "";
         support += "Inserisci la contribuzione energetica del impianto fotovoltaico\n";
@@ -48,6 +50,7 @@ int main(int argc, char* argv[]){
 
     cs.save_log(support);
 
+    //serve per continuare ad inserire comandi da terminale fino a quando non si ha raggiunto la fine della giornata 
     while(!cs.dayFinished()){
         support = "Inserisci un comando \n";
         std::cout << support;

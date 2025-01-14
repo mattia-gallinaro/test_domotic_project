@@ -1,4 +1,4 @@
-//author Gallinaro Mattia
+//autore Gallinaro Mattia
 #include "ControlSystem.h"
 
 void ControlSystem::read_devices_from_file(){
@@ -220,7 +220,7 @@ int ControlSystem::convert_string_time(const std::string& name){
     if(texts.size() != 2) throw std::invalid_argument("Il tempo deve essere scritto come HH:MM");
     int hour = std::stoi(texts[0]);
     int minutes = std::stoi(texts[1]);
-    if(hour < 0 || hour > 23 || minutes < 0 || minutes > 59) throw std::invalid_argument("Time inserted is not valid");
+    if(hour < 0 || hour > 23 || minutes < 0 || minutes > 59) throw std::invalid_argument("Il tempo inserito non è corretto");
     return hour * 60 + minutes;
 }
 
@@ -248,7 +248,7 @@ std::string ControlSystem::set_time_of_day(const std::string& time_to_reach){
         house_time++;
     } 
     house_time--;
-    output += "[" + time_to_reach+ "] L'orario attuale e' " + time_to_reach;
+    output += "[" + time_to_reach+ "] L'orario attuale è " + time_to_reach;
     return output;
 }
 
@@ -287,13 +287,13 @@ std::string ControlSystem::set_timer_device(const std::string& name , const std:
 }
 
 std::string ControlSystem::execute_command(const std::string& input){
-    std::string output = "[" + convert_time(house_time) +"] L'orario attuale e' " + convert_time(house_time) + "\n";
+    std::string output = "[" + convert_time(house_time) +"] L'orario attuale è " + convert_time(house_time) + "\n";
     std::vector<std::string> command_inserted = divide_input_string(input);
     switch(std::distance(std::find(commands.begin(), commands.end(), command_inserted[0]), commands.end())){
         //caso per set
         case 4:
             //tento di dividere il più possibile il numero di controlli andando a vedere se l'ultimo elemento del comando era una tempo 
-            if(command_inserted.size() <= 2) throw std::invalid_argument("Il comando inserito non e' corretto");
+            if(command_inserted.size() <= 2) throw std::invalid_argument("Il comando inserito non è corretto");
             if(command_inserted[command_inserted.size() -1].find(":") != std::string::npos){
                 //ora devo controllare se ho eseguito un set time o set device time_start time_end basta controllare il secondo elemento
                 if(command_inserted[1] != "time"){//chiamo funzione con set device e i due time
@@ -339,14 +339,14 @@ std::string ControlSystem::execute_command(const std::string& input){
             if(command_inserted.size() != 2) throw std::invalid_argument("Il comando inserito non è corretto");
             if(command_inserted[1] == "time") {
                 reset_time();
-                output = "[00:00] L'orario attuale e' 00:00 \n";
+                output = "[00:00] L'orario attuale è 00:00 \n";
             }
             else if(command_inserted[1] == "timers") reset_timers();
             else if(command_inserted[1] == "all"){
                 reset_all();
                 output = "[00:00] L'orario attuale e' 00:00 \n";
             }
-            else throw std::invalid_argument("Il comando inserito non e' corretto");
+            else throw std::invalid_argument("Il comando inserito non è corretto");
            break;
             }
         default:
@@ -369,8 +369,11 @@ void ControlSystem::orderActions(){
 }
 
 std::string ControlSystem::set_device_off(const std::string& name){
+    std::string output ="";
     if(name == impianto.get_name()){
-        return impianto.setOff(house_time);
+        output = impianto.setOff(house_time);
+        if(get_current_contribution() <= 0)output += turn_off_devices();
+        return output;
     }
     int pos = find_device_by_name(name);
     if(pos == -1)throw std::invalid_argument("Il nome inserito non è presente tra i dispositivi disponibili");
