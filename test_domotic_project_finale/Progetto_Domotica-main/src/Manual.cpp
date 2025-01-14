@@ -41,12 +41,12 @@
               std::string start_log = convert_time(start);
               end_time = end;
               std::string end_log = convert_time(end);
-              s = "[" + time_log + "] Impostato un timer per il dispositivo " + name+ "["+ std::to_string(ID) + "] dalle "+ start_log +" alle "+ end_log +"\n";
+              s = "[" + time_log + "] Impostato un timer per il dispositivo '" + name+ "["+ std::to_string(ID) + "]' dalle "+ start_log +" alle "+ end_log +"\n";
        }
        else{//altrimenti imposto solo un'orario di accensione programmata
               starting_time = start;
               std::string start_log = convert_time(start); 
-              s = "[" + time_log + "] Impostata l'accensione del dispositivo " + name+ "["+ std::to_string(ID) +"] per le "+ start_log + "\n";
+              s = "[" + time_log + "] Impostata l'accensione del dispositivo '" + name+ "["+ std::to_string(ID) +"]' per le "+ start_log + "\n";
        }
        return s;
  }
@@ -61,6 +61,6 @@
         }
         end_time = -1;
         std::string time_log = convert_time(time);
-        std::string s = "["+ time_log +"] Rimosso il timer dal dispositivo "+ name+ "["+ std::to_string(ID) + "]\n";
+        std::string s = "["+ time_log +"] Rimosso il timer dal dispositivo '"+ name+ "["+ std::to_string(ID) + "]'\n";
         return s;
  }

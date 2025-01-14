@@ -16,9 +16,9 @@ std::string Device::setOff(unsigned int time){
              this->add_energy_consumed();
              state = false;   
              std::string time_log = convert_time(time);
-             s = "[" + time_log+"] Il dispositivo '"+ name+ "["+ std::to_string(ID) + "] si è spento\n";   
+             s = "[" + time_log+"] Il dispositivo '"+ name+ "["+ std::to_string(ID) + "]' si è spento\n";   
          }
-         else s = "Dispositivo "+ name+ "["+ std::to_string(ID) + "] già spento\n";
+         else s = "Dispositivo '"+ name+ "["+ std::to_string(ID) + "]' già spento\n";
          return s;
 }
 

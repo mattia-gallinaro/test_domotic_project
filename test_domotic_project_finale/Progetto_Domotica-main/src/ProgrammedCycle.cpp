@@ -43,7 +43,7 @@ std::string ProgrammedCycle::setTimer(unsigned int time, unsigned int start, uns
      std::string end_log;
      if(end_time > 1439) end_log = convert_time(1439);//non si oltrepassa la mezzanotte
      else end_log = convert_time(end_time);
-     s = "[" + time_log + "] Impostato un timer per il dispositivo " + name+ "["+ std::to_string(ID) + "] dalle "+ start_log +" alle "+ end_log +"\n";
+     s = "[" + time_log + "] Impostato un timer per il dispositivo '" + name+ "["+ std::to_string(ID) + "]' dalle "+ start_log +" alle "+ end_log +"\n";
      return s;
 }
 
@@ -60,6 +60,6 @@ std::string ProgrammedCycle::reset_timer(unsigned int time){
             end_time = -1;
         }  
         std::string time_log = convert_time(time);
-        std::string s = "["+ time_log +"] Rimosso il timer dal dispositivo "+ name+ "["+ std::to_string(ID) + "]\n";
+        std::string s = "["+ time_log +"] Rimosso il timer dal dispositivo '"+ name+ "["+ std::to_string(ID) + "]'\n";
         return s;
 }
