@@ -1,84 +1,34 @@
+Inserisci la contribuzione energetica del impianto fotovoltaico
+2.4
+Inserisci un comando 
+set Lavatrice 10
+Il comando non esiste
+Inserisci un comando 
+set Lavatrice 10:00
 [00:00] L'orario attuale e' 00:00
-[12:00] L'orario attuale e' 12:00
-[12:00] L'orario attuale e' 12:00
-[12:00] Il dispositivo 'Impianto fotovoltaico[0]' si è acceso
+[00:00] Impostato un timer per il dispositivo Lavatrice[1] dalle 10:00 alle 11:50
 
+Inserisci un comando 
+set time 12:00
+[00:00] L'orario attuale e' 00:00
+[10:00] Il dispositivo 'Lavatrice [1]' si è acceso
+[11:50] Il dispositivo 'Lavatrice[1] si è spento
 [12:00] L'orario attuale e' 12:00
-[12:00] Il dispositivo 'Lavatrice [1]' si è acceso
-
-[12:00] L'orario attuale e' 12:00
-[13:50] Il dispositivo 'Lavatrice[1] si è spento
-[15:00] L'orario attuale e' 15:00
-[15:00] Attualmente il sistema ha prodotto (compresa la rete elettrica) 52.500000kWh e consumato 3.666667 kWh. Nello specifico: 
-   -  Il dispositivo Lavatrice ha attualmente consumato 3.666667 kWh 
-   -  Il dispositivo Lavastoviglie ha attualmente consumato .000000 kWh 
-   -  Il dispositivo Pompa di calore + termostato ha attualmente consumato .000000 kWh 
-   -  Il dispositivo Tapparelle elettriche ha attualmente consumato .000000 kWh 
-   -  Il dispositivo Scaldabagno ha attualmente consumato .000000 kWh 
-   -  Il dispositivo Frigorifero ha attualmente consumato .000000 kWh 
-   -  Il dispositivo Forno a microonde ha attualmente consumato .000000 kWh 
-   -  Il dispositivo Asciugatrice ha attualmente consumato .000000 kWh 
-   -  Il dispositivo Televisore ha attualmente consumato .000000 kWh 
-
+Inserisci un comando 
+reset time
 [00:00] L'orario attuale e' 00:00 
 
-[00:00] Attualmente il sistema ha prodotto (compresa la rete elettrica) -27.600000kWh e consumato .000000 kWh. Nello specifico: 
-   -  Il dispositivo Lavatrice ha attualmente consumato .000000 kWh 
-   -  Il dispositivo Lavastoviglie ha attualmente consumato .000000 kWh 
-   -  Il dispositivo Pompa di calore + termostato ha attualmente consumato .000000 kWh 
-   -  Il dispositivo Tapparelle elettriche ha attualmente consumato .000000 kWh 
-   -  Il dispositivo Scaldabagno ha attualmente consumato .000000 kWh 
-   -  Il dispositivo Frigorifero ha attualmente consumato .000000 kWh 
-   -  Il dispositivo Forno a microonde ha attualmente consumato .000000 kWh 
-   -  Il dispositivo Asciugatrice ha attualmente consumato .000000 kWh 
-   -  Il dispositivo Televisore ha attualmente consumato .000000 kWh 
-
+Inserisci un comando 
+set time 13:00
 [00:00] L'orario attuale e' 00:00
-[00:00] Il dispositivo 'Impianto fotovoltaico[0]' si è acceso
-
-[00:00] L'orario attuale e' 00:00
-[00:00] Impostato un timer per il dispositivo Lavatrice[1] dalle 12:00 alle 13:50
-
-[00:00] L'orario attuale e' 00:00
-[12:00] Il dispositivo 'Lavatrice [1]' si è acceso
-[13:50] Il dispositivo 'Lavatrice[1] si è spento
-[15:00] L'orario attuale e' 15:00
-[15:00] Attualmente il sistema ha prodotto (compresa la rete elettrica) 52.500000kWh e consumato 3.666667 kWh. Nello specifico: 
-   -  Il dispositivo Lavatrice ha attualmente consumato 3.666667 kWh 
-   -  Il dispositivo Lavastoviglie ha attualmente consumato .000000 kWh 
-   -  Il dispositivo Pompa di calore + termostato ha attualmente consumato .000000 kWh 
-   -  Il dispositivo Tapparelle elettriche ha attualmente consumato .000000 kWh 
-   -  Il dispositivo Scaldabagno ha attualmente consumato .000000 kWh 
-   -  Il dispositivo Frigorifero ha attualmente consumato .000000 kWh 
-   -  Il dispositivo Forno a microonde ha attualmente consumato .000000 kWh 
-   -  Il dispositivo Asciugatrice ha attualmente consumato .000000 kWh 
-   -  Il dispositivo Televisore ha attualmente consumato .000000 kWh 
-
+[10:00] Il dispositivo 'Lavatrice [1]' si è acceso
+[11:50] Il dispositivo 'Lavatrice[1] si è spento
+[13:00] L'orario attuale e' 13:00
+Inserisci un comando 
+reset all
 [00:00] L'orario attuale e' 00:00 
 
-[00:00] Attualmente il sistema ha prodotto (compresa la rete elettrica) 0.000000kWh e consumato .000000 kWh. Nello specifico: 
-   -  Il dispositivo Lavatrice ha attualmente consumato .000000 kWh 
-   -  Il dispositivo Lavastoviglie ha attualmente consumato .000000 kWh 
-   -  Il dispositivo Pompa di calore + termostato ha attualmente consumato .000000 kWh 
-   -  Il dispositivo Tapparelle elettriche ha attualmente consumato .000000 kWh 
-   -  Il dispositivo Scaldabagno ha attualmente consumato .000000 kWh 
-   -  Il dispositivo Frigorifero ha attualmente consumato .000000 kWh 
-   -  Il dispositivo Forno a microonde ha attualmente consumato .000000 kWh 
-   -  Il dispositivo Asciugatrice ha attualmente consumato .000000 kWh 
-   -  Il dispositivo Televisore ha attualmente consumato .000000 kWh 
-
+Inserisci un comando 
+set time 23:59
 [00:00] L'orario attuale e' 00:00
-[12:00] L'orario attuale e' 12:00
-[12:00] Attualmente il sistema ha prodotto (compresa la rete elettrica) 42.000000kWh e consumato .000000 kWh. Nello specifico: 
-   -  Il dispositivo Lavatrice ha attualmente consumato .000000 kWh 
-   -  Il dispositivo Lavastoviglie ha attualmente consumato .000000 kWh 
-   -  Il dispositivo Pompa di calore + termostato ha attualmente consumato .000000 kWh 
-   -  Il dispositivo Tapparelle elettriche ha attualmente consumato .000000 kWh 
-   -  Il dispositivo Scaldabagno ha attualmente consumato .000000 kWh 
-   -  Il dispositivo Frigorifero ha attualmente consumato .000000 kWh 
-   -  Il dispositivo Forno a microonde ha attualmente consumato .000000 kWh 
-   -  Il dispositivo Asciugatrice ha attualmente consumato .000000 kWh 
-   -  Il dispositivo Televisore ha attualmente consumato .000000 kWh 
-
-[12:00] L'orario attuale e' 12:00
 [23:59] L'orario attuale e' 23:59

@@ -16,6 +16,8 @@ int main(int argc, char* argv[]){
 
     double val = 3.5;
     std::string test;
+    std::string output;
+    std::string support;
     if(argc >= 2){
         try{
             double val = convert_rete_elettrica_value(argv[1]);// in teoria dovrebbe essere il secondo argomento usando cmake
@@ -26,27 +28,39 @@ int main(int argc, char* argv[]){
     }
     bool done = false;
     while(!done){
-        std::cout << "Inserisci la contribuzione energetica del impianto fotovoltaico" << std::endl;
+        output = "";
+        support += "Inserisci la contribuzione energetica del impianto fotovoltaico\n";
+        std::cout << support ;
         try{
             std::getline(std::cin, test);
+            support += test;
             if(std::stod(test) > 0){
                 done = true;
             }else throw std::invalid_argument("");
         }catch(std::logic_error e){
-            std::cout << "Valore non accettabile" << std::endl;
+            output = "Valore non accettabile \n";
+            std::cout << output;
         }
+        support += output;
     }
 
     ControlSystem cs(std::stod(test), val);
 
+    cs.save_log(support);
+
     while(!cs.dayFinished()){
-        std::cout << "Inserisci un comando" << std::endl;
+        support = "Inserisci un comando \n";
+        std::cout << support;
         try{
             std::getline(std::cin, test);
-            std::cout << cs.execute_command(test) << std::endl;
+            support += (test + "\n");
+            output = cs.execute_command(test);
+            std::cout << output << std::endl;
         }catch(std::logic_error e){
-            std::cout << e.what() << std::endl;
+            output = e.what();
+            std::cout << output << std::endl;
         }
+        cs.save_log(support + output);
     }
     return 0;
 }

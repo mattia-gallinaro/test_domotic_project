@@ -364,7 +364,6 @@ std::string ControlSystem::execute_command(const std::string& input){
             throw std::invalid_argument("Il comando inserito non esiste ");
             break;
     }
-    save_log(output);
     return output;
 }
 

@@ -15,14 +15,18 @@
 
 class ControlSystem{
     public:
-       ControlSystem(const double& value_impianto, const double& rete = 3.5) : impianto("Impianto fotovoltaico", value_impianto){
+        ControlSystem(const double& value_impianto, const double& rete = 3.5) : impianto("Impianto fotovoltaico", value_impianto){
             rete_elettrica = rete;
             read_devices_from_file();
+        };
+        ControlSystem(const std::string& event_log) : impianto("Impianto fotovoltaico", 1){
+            save_log(event_log);
         };
         std::string execute_command(const std::string& input);
         bool dayFinished(){
             return house_time >= 1439;
         };
+        void save_log(const std::string& event);
     private:
 
         struct Action{
@@ -41,7 +45,6 @@ class ControlSystem{
         std::string turn_off_devices(void);
         void order_devices(const int& pos);
         void read_devices_from_file(void);
-        void save_log(const std::string& event);
         std::string set_device_on(const std::string& name);
         std::string set_device_off(const std::string& name);
         std::string set_time_of_day(const std::string& time_to_reach);
