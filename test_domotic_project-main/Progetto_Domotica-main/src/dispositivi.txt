@@ -1,0 +1,9 @@
+Lavatrice,110,-2
+Lavastoviglie,195,-1.5
+Pompa di calore + termostato,Manuale,-2
+Tapparelle elettriche,1,-0.3
+Scaldabagno,Manuale,-1
+Frigorifero,Manuale,-0.4
+Forno a microonde,2,-0.8
+Asciugatrice,60,-0.5
+Televisore,60,-0.2

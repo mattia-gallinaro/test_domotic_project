@@ -1,0 +1,4 @@
+/home/mat/test_domotic_project-main/Progetto_Domotica-main/build/CMakeFiles/Progetto_Domotica.dir
+/home/mat/test_domotic_project-main/Progetto_Domotica-main/build/CMakeFiles/main.dir
+/home/mat/test_domotic_project-main/Progetto_Domotica-main/build/CMakeFiles/edit_cache.dir
+/home/mat/test_domotic_project-main/Progetto_Domotica-main/build/CMakeFiles/rebuild_cache.dir

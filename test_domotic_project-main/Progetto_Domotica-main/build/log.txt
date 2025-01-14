@@ -1,0 +1,335 @@
+[00:00] Il dispositivo 'Impianto fotovoltaico[1998730136]' si è acceso
+
+Dispositivo 'Impianto fotovoltaico[1998730136]' già acceso
+
+[00:00] Il dispositivo 'Impianto fotovoltaico[1998730136] si è spento
+
+[00:00] L'orario attuale e' 00:00
+[00:00] Il dispositivo 'Impianto fotovoltaico[0]' si è acceso
+
+[00:00] L'orario attuale e' 00:00
+[00:00] Il dispositivo 'Impianto fotovoltaico[0]' si è acceso
+
+[00:00] L'orario attuale e' 00:00
+[00:00] Il dispositivo 'Lavatrice [2]' si è acceso
+
+[00:00] L'orario attuale e' 00:00
+[00:00] Il dispositivo 'Impianto fotovoltaico[0]' si è acceso
+
+[00:00] L'orario attuale e' 00:00
+[00:00] Il dispositivo 'Impianto fotovoltaico[0]' si è acceso
+
+[00:00] L'orario attuale e' 00:00
+[00:00] Il dispositivo 'Lavatrice [2]' si è acceso
+
+[00:00] L'orario attuale e' 00:00
+[00:00] Il dispositivo 'Lavastoviglie [3]' si è acceso
+
+[00:00] L'orario attuale e' 00:00
+[00:00] Il dispositivo 'Pompa di calore + termostato[4]' si è acceso
+
+[00:00] L'orario attuale e' 00:00
+[00:00] Il dispositivo 'Lavastoviglie [2]' si è acceso
+
+[00:00] L'orario attuale e' 00:00
+[00:00] Il dispositivo 'Lavatrice [1]' si è acceso
+
+[00:00] L'orario attuale e' 00:00
+[00:00] Il dispositivo 'Tapparelle elettriche [4]' si è acceso
+
+[00:00] L'orario attuale e' 00:00
+[00:00] Il dispositivo 'Impianto fotovoltaico[0]' si è acceso
+
+[00:00] L'orario attuale e' 00:00
+[00:00] Il dispositivo 'Impianto fotovoltaico[0] si è spento
+
+[00:00] L'orario attuale e' 00:00
+[00:00] Il dispositivo 'Lavatrice [1]' si è acceso
+
+[00:00] L'orario attuale e' 00:00
+[00:00] Il dispositivo 'Lavatrice [1]' si è acceso
+
+[00:00] L'orario attuale e' 00:00
+[00:00] Il dispositivo 'Lavastoviglie [2]' si è acceso
+
+[00:00] L'orario attuale e' 00:00
+[00:00] Il dispositivo 'Tapparelle elettriche [4]' si è acceso
+
+[00:00] L'orario attuale e' 00:00
+[00:00] Il dispositivo 'Scaldabagno[5]' si è acceso
+
+[00:00] L'orario attuale e' 00:00
+[00:00] Il dispositivo 'Lavatrice [1]' si è acceso
+
+[00:00] L'orario attuale e' 00:00
+[00:00] Il dispositivo 'Lavastoviglie [2]' si è acceso
+
+[00:00] L'orario attuale e' 00:00
+[00:00] Il dispositivo 'Lavatrice [1]' si è acceso
+
+[00:00] L'orario attuale e' 00:00
+[00:00] Il dispositivo 'Tapparelle elettriche [4]' si è acceso
+[00:00] Il dispositivo 'Lavatrice[1] si è spento
+
+[00:00] L'orario attuale e' 00:00
+[00:00] Il dispositivo 'Lavatrice [1]' si è acceso
+
+[00:00] L'orario attuale e' 00:00
+[00:00] Il dispositivo 'Lavastoviglie [2]' si è acceso
+[00:00] Il dispositivo 'Lavastoviglie[2] si è spento
+
+[00:00] L'orario attuale e' 00:00
+[00:00] Il dispositivo 'Tapparelle elettriche [4]' si è acceso
+
+[00:00] L'orario attuale e' 00:00
+[00:00] Il dispositivo 'Lavastoviglie [2]' si è acceso
+[00:00] Il dispositivo 'Lavastoviglie[2] si è spento
+
+[00:00] L'orario attuale e' 00:00
+Dispositivo Lavastoviglie[2] già spento
+[08:00] L'orario attuale e' 08:00
+[00:00] L'orario attuale e' 00:00
+[00:00] Il dispositivo 'Lavastoviglie [2]' si è acceso
+
+[00:00] L'orario attuale e' 00:00
+[00:00] Il dispositivo 'Tapparelle elettriche [4]' si è acceso
+
+[00:00] L'orario attuale e' 00:00
+[03:15] Il dispositivo 'Lavastoviglie[2] si è spento
+[08:00] L'orario attuale e' 08:00
+[08:00] L'orario attuale e' 08:00
+[09:00] L'orario attuale e' 09:00
+[540] Attualmente il sistema ha prodotto 31.500000kWh e consumato 4.500000 kWh. Nello specifico: 
+   -  Il dispositivo Tapparelle elettriche ha attualmente consumato .000000 kWh 
+   -  Il dispositivo Lavastoviglie ha attualmente consumato 4.500000 kWh 
+   -  Il dispositivo Lavatrice ha attualmente consumato .000000 kWh 
+   -  Il dispositivo Pompa di calore + termostato ha attualmente consumato .000000 kWh 
+   -  Il dispositivo Scaldabagno ha attualmente consumato .000000 kWh 
+   -  Il dispositivo Frigorifero ha attualmente consumato .000000 kWh 
+   -  Il dispositivo Forno a microonde ha attualmente consumato .000000 kWh 
+   -  Il dispositivo Asciugatrice ha attualmente consumato .000000 kWh 
+   -  Il dispositivo Televisore ha attualmente consumato .000000 kWh 
+
+[09:00] L'orario attuale e' 09:00
+[09:00] Il dispositivo 'Tapparelle elettriche[4] si è spento
+
+[540] Attualmente il sistema ha prodotto 31.500000kWh e consumato 7.200000 kWh. Nello specifico: 
+   -  Il dispositivo Tapparelle elettriche ha attualmente consumato 2.700000 kWh 
+   -  Il dispositivo Lavastoviglie ha attualmente consumato 4.500000 kWh 
+   -  Il dispositivo Lavatrice ha attualmente consumato .000000 kWh 
+   -  Il dispositivo Pompa di calore + termostato ha attualmente consumato .000000 kWh 
+   -  Il dispositivo Scaldabagno ha attualmente consumato .000000 kWh 
+   -  Il dispositivo Frigorifero ha attualmente consumato .000000 kWh 
+   -  Il dispositivo Forno a microonde ha attualmente consumato .000000 kWh 
+   -  Il dispositivo Asciugatrice ha attualmente consumato .000000 kWh 
+   -  Il dispositivo Televisore ha attualmente consumato .000000 kWh 
+
+[00:00] L'orario attuale e' 00:00
+[00:00] Il dispositivo 'Lavastoviglie [2]' si è acceso
+
+[00:00] L'orario attuale e' 00:00
+[00:00] Il dispositivo 'Tapparelle elettriche [4]' si è acceso
+
+[00:00] L'orario attuale e' 00:00
+[00:01] Il dispositivo 'Tapparelle elettriche[4] si è spento
+[03:15] Il dispositivo 'Lavastoviglie[2] si è spento
+[09:00] L'orario attuale e' 09:00
+[540] Attualmente il sistema ha prodotto 31.500000kWh e consumato 4.500000 kWh. Nello specifico: 
+   -  Il dispositivo Tapparelle elettriche ha attualmente consumato .000000 kWh 
+   -  Il dispositivo Lavastoviglie ha attualmente consumato 4.500000 kWh 
+   -  Il dispositivo Lavatrice ha attualmente consumato .000000 kWh 
+   -  Il dispositivo Pompa di calore + termostato ha attualmente consumato .000000 kWh 
+   -  Il dispositivo Scaldabagno ha attualmente consumato .000000 kWh 
+   -  Il dispositivo Frigorifero ha attualmente consumato .000000 kWh 
+   -  Il dispositivo Forno a microonde ha attualmente consumato .000000 kWh 
+   -  Il dispositivo Asciugatrice ha attualmente consumato .000000 kWh 
+   -  Il dispositivo Televisore ha attualmente consumato .000000 kWh 
+
+[00:00] L'orario attuale e' 00:00
+[00:00] Il dispositivo 'Tapparelle elettriche [4]' si è acceso
+
+[00:00] L'orario attuale e' 00:00
+[00:01] Il dispositivo 'Tapparelle elettriche[4] si è spento
+[09:00] L'orario attuale e' 09:00
+[09:00] Attualmente il sistema ha prodotto (compresa la rete elettrica) 31.500000kWh e consumato .000000 kWh. Nello specifico: 
+   -  Il dispositivo Tapparelle elettriche ha attualmente consumato .000000 kWh 
+   -  Il dispositivo Lavatrice ha attualmente consumato .000000 kWh 
+   -  Il dispositivo Lavastoviglie ha attualmente consumato .000000 kWh 
+   -  Il dispositivo Pompa di calore + termostato ha attualmente consumato .000000 kWh 
+   -  Il dispositivo Scaldabagno ha attualmente consumato .000000 kWh 
+   -  Il dispositivo Frigorifero ha attualmente consumato .000000 kWh 
+   -  Il dispositivo Forno a microonde ha attualmente consumato .000000 kWh 
+   -  Il dispositivo Asciugatrice ha attualmente consumato .000000 kWh 
+   -  Il dispositivo Televisore ha attualmente consumato .000000 kWh 
+
+[00:00] L'orario attuale e' 00:00
+[00:00] Il dispositivo 'Tapparelle elettriche [4]' si è acceso
+
+[00:00] L'orario attuale e' 00:00
+[00:01] Il dispositivo 'Tapparelle elettriche[4] si è spento
+[04:00] L'orario attuale e' 04:00
+[04:00] Attualmente il sistema ha prodotto (compresa la rete elettrica) 14.000000kWh e consumato 0.005000 kWh. Nello specifico: 
+   -  Il dispositivo Tapparelle elettriche ha attualmente consumato 0.005000 kWh 
+   -  Il dispositivo Lavatrice ha attualmente consumato .000000 kWh 
+   -  Il dispositivo Lavastoviglie ha attualmente consumato .000000 kWh 
+   -  Il dispositivo Pompa di calore + termostato ha attualmente consumato .000000 kWh 
+   -  Il dispositivo Scaldabagno ha attualmente consumato .000000 kWh 
+   -  Il dispositivo Frigorifero ha attualmente consumato .000000 kWh 
+   -  Il dispositivo Forno a microonde ha attualmente consumato .000000 kWh 
+   -  Il dispositivo Asciugatrice ha attualmente consumato .000000 kWh 
+   -  Il dispositivo Televisore ha attualmente consumato .000000 kWh 
+
+[00:00] L'orario attuale e' 00:00
+[00:00] Il dispositivo 'Tapparelle elettriche [4]' si è acceso
+
+[00:00] L'orario attuale e' 00:00
+[00:00] Il dispositivo 'Tapparelle elettriche[4] si è spento
+
+[00:00] L'orario attuale e' 00:00
+Dispositivo Tapparelle elettriche[4] già spento
+[09:00] L'orario attuale e' 09:00
+[00:00] L'orario attuale e' 00:00
+[00:00] Il dispositivo 'Tapparelle elettriche [4]' si è acceso
+
+[00:00] L'orario attuale e' 00:00
+[00:00] Il dispositivo 'Tapparelle elettriche[4] si è spento
+
+[00:00] L'orario attuale e' 00:00
+[09:00] L'orario attuale e' 09:00
+Il Dispositivo Tapparelle elettriche ha attualmente consumato 0.000000 kWh 
+
+[09:00] L'orario attuale e' 09:00
+[09:00] Impostato un timer per il dispositivo Impianto fotovoltaico[0] dalle 10:00 alle 11:00
+
+[00:00] L'orario attuale e' 00:00
+[00:00] Impostato un timer per il dispositivo Impianto fotovoltaico[0] dalle 10:00 alle 11:00
+
+[00:00] L'orario attuale e' 00:00
+[10:00] Il dispositivo 'Impianto fotovoltaico[0]' si è acceso
+[10:30] L'orario attuale e' 10:30
+[10:30] L'orario attuale e' 10:30
+[12:00] L'orario attuale e' 12:00
+[00:00] L'orario attuale e' 00:00
+[00:00] Impostato un timer per il dispositivo Impianto fotovoltaico[0] dalle 10:00 alle 11:00
+
+[00:00] L'orario attuale e' 00:00
+[10:00] Il dispositivo 'Impianto fotovoltaico[0]' si è acceso
+[10:30] L'orario attuale e' 10:30
+[10:30] L'orario attuale e' 10:30
+[11:00] L'orario attuale e' 11:00
+[11:00] L'orario attuale e' 11:00
+[11:01] L'orario attuale e' 11:01
+[00:00] L'orario attuale e' 00:00
+[00:00] Impostato un timer per il dispositivo Impianto fotovoltaico[0] dalle 09:00 alle 10:00
+
+[00:00] L'orario attuale e' 00:00
+[09:00] Il dispositivo 'Impianto fotovoltaico[0]' si è acceso
+[09:30] L'orario attuale e' 09:30
+[09:30] L'orario attuale e' 09:30
+[10:00] L'orario attuale e' 10:00
+[00:00] L'orario attuale e' 00:00
+[00:00] Impostato un timer per il dispositivo Impianto fotovoltaico[0] dalle 09:00 alle 10:00
+
+[00:00] L'orario attuale e' 00:00
+[09:00] Il dispositivo 'Impianto fotovoltaico[0]' si è acceso
+[10:00] Il dispositivo 'Impianto fotovoltaico[0] si è spento
+[11:00] L'orario attuale e' 11:00
+Il Dispositivo Impianto fotovoltaico ha attualmente consumato 2.400000 kWh 
+
+[00:00] L'orario attuale e' 00:00
+[00:00] Impostata l'accensione del dispositivo Impianto fotovoltaico[0] per le 10:00
+
+[00:00] L'orario attuale e' 00:00
+[10:00] Il dispositivo 'Impianto fotovoltaico[0]' si è acceso
+[11:00] L'orario attuale e' 11:00
+[11:00] L'orario attuale e' 11:00
+[23:58] L'orario attuale e' 23:58
+[23:58] L'orario attuale e' 23:58
+[23:58] Il dispositivo 'Impianto fotovoltaico[0] si è spento
+
+Il Dispositivo Impianto fotovoltaico ha attualmente generato 33.520000 kWh 
+
+[00:00] L'orario attuale e' 00:00 
+
+[00:00] L'orario attuale e' 00:00
+[00:00] Impostata l'accensione del dispositivo Impianto fotovoltaico[0] per le 10:00
+
+[00:00] L'orario attuale e' 00:00
+[00:00] Impostato un timer per il dispositivo Lavatrice[1] dalle 11:00 alle 12:50
+
+[00:00] L'orario attuale e' 00:00
+[10:00] Il dispositivo 'Impianto fotovoltaico[0]' si è acceso
+[10:30] L'orario attuale e' 10:30
+[10:30] L'orario attuale e' 10:30
+[11:30] L'orario attuale e' 11:30
+[11:30] L'orario attuale e' 11:30
+[12:00] L'orario attuale e' 12:00
+[12:00] L'orario attuale e' 12:00
+[13:00] L'orario attuale e' 13:00
+[00:00] L'orario attuale e' 00:00
+[00:00] Impostato un timer per il dispositivo Lavatrice[1] dalle 10:00 alle 11:50
+
+[00:00] L'orario attuale e' 00:00
+[00:00] Impostata l'accensione del dispositivo Impianto fotovoltaico[0] per le 10:00
+
+[00:00] L'orario attuale e' 00:00
+[00:00] Impostato un timer per il dispositivo Lavatrice[1] dalle 10:00 alle 11:50
+
+[00:00] L'orario attuale e' 00:00
+[10:00] Il dispositivo 'Impianto fotovoltaico[0]' si è acceso
+[10:00] Il dispositivo 'Lavatrice [1]' si è acceso
+[10:30] L'orario attuale e' 10:30
+[10:30] L'orario attuale e' 10:30
+[12:00] L'orario attuale e' 12:00
+[00:00] L'orario attuale e' 00:00
+[00:00] Impostato un timer per il dispositivo Lavatrice[1] dalle 10:00 alle 11:50
+
+[00:00] L'orario attuale e' 00:00
+[10:00] Il dispositivo 'Lavatrice [1]' si è acceso
+[11:50] Il dispositivo 'Lavatrice[1] si è spento
+[12:00] L'orario attuale e' 12:00
+[00:00] L'orario attuale e' 00:00 
+
+[00:00] L'orario attuale e' 00:00
+[10:00] Il dispositivo 'Lavatrice [1]' si è acceso
+[11:50] Il dispositivo 'Lavatrice[1] si è spento
+[12:00] L'orario attuale e' 12:00
+[00:00] L'orario attuale e' 00:00 
+
+[00:00] L'orario attuale e' 00:00
+[00:00] Impostato un timer per il dispositivo Lavatrice[1] dalle 10:00 alle 11:50
+
+[00:00] L'orario attuale e' 00:00
+[10:00] Il dispositivo 'Lavatrice [1]' si è acceso
+[10:30] L'orario attuale e' 10:30
+[10:30] L'orario attuale e' 10:30
+[12:00] L'orario attuale e' 12:00
+[12:00] L'orario attuale e' 12:00
+[13:00] L'orario attuale e' 13:00
+Il Dispositivo Lavatrice ha attualmente consumato 0.000000 kWh 
+
+[13:00] L'orario attuale e' 13:00
+[13:00] Il dispositivo 'Lavatrice[1] si è spento
+
+Il Dispositivo Lavatrice ha attualmente consumato -6.000000 kWh 
+
+[00:00] L'orario attuale e' 00:00
+[00:00] Impostato un timer per il dispositivo Lavatrice[1] dalle 10:00 alle 11:50
+
+[00:00] L'orario attuale e' 00:00
+[10:00] Il dispositivo 'Lavatrice [1]' si è acceso
+[11:00] L'orario attuale e' 11:00
+[00:00] L'orario attuale e' 00:00
+[00:00] Impostato un timer per il dispositivo Lavatrice[1] dalle 10:00 alle 11:50
+
+[00:00] L'orario attuale e' 00:00
+[10:00] Il dispositivo 'Lavatrice [1]' si è acceso
+[11:50] Il dispositivo 'Lavatrice[1] si è spento
+[12:00] L'orario attuale e' 12:00
+[00:00] L'orario attuale e' 00:00 
+
+[00:00] L'orario attuale e' 00:00
+[10:00] Il dispositivo 'Lavatrice [1]' si è acceso
+[11:00] L'orario attuale e' 11:00
+[11:00] L'orario attuale e' 11:00
+[12:00] L'orario attuale e' 12:00
