@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC -O2 -shared -Wl,-soname,libProgetto_Domotica.so -o libProgetto_Domotica.so CMakeFiles/Progetto_Domotica.dir/src/Device.cpp.o CMakeFiles/Progetto_Domotica.dir/src/Manual.cpp.o CMakeFiles/Progetto_Domotica.dir/src/ProgrammedCycle.cpp.o CMakeFiles/Progetto_Domotica.dir/src/ControlSystem.cpp.o 
