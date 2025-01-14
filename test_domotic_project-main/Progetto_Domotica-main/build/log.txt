@@ -333,3 +333,79 @@ Il Dispositivo Lavatrice ha attualmente consumato -6.000000 kWh
 [11:00] L'orario attuale e' 11:00
 [11:00] L'orario attuale e' 11:00
 [12:00] L'orario attuale e' 12:00
+[00:00] L'orario attuale e' 00:00
+[00:00] Impostato un timer per il dispositivo Lavatrice[1] dalle 10:00 alle 11:50
+
+[00:00] L'orario attuale e' 00:00
+[00:00] Impostato un timer per il dispositivo Lavatrice[1] dalle 10:00 alle 11:50
+
+[00:00] L'orario attuale e' 00:00
+[10:00] Il dispositivo 'Lavatrice [1]' si è acceso
+[11:00] L'orario attuale e' 11:00
+[11:00] L'orario attuale e' 11:00
+[12:00] L'orario attuale e' 12:00
+[00:00] L'orario attuale e' 00:00
+[00:00] Impostato un timer per il dispositivo Lavatrice[1] dalle 10:00 alle 11:50
+
+[00:00] L'orario attuale e' 00:00
+[10:00] Il dispositivo 'Lavatrice [1]' si è acceso
+[10:30] L'orario attuale e' 10:30
+[10:30] L'orario attuale e' 10:30
+[11:50] Il dispositivo 'Lavatrice[1] si è spento
+[12:00] L'orario attuale e' 12:00
+Il Dispositivo Lavatrice ha attualmente consumato -3.666667 kWh 
+
+[00:00] L'orario attuale e' 00:00 
+
+[00:00] L'orario attuale e' 00:00
+[10:00] Il dispositivo 'Lavatrice [1]' si è acceso
+[11:50] Il dispositivo 'Lavatrice[1] si è spento
+[12:00] L'orario attuale e' 12:00
+[12:00] L'orario attuale e' 12:00
+[12:00] Impostato un timer per il dispositivo Lavatrice[1] dalle 18:00 alle 19:50
+
+[12:00] L'orario attuale e' 12:00
+[20:00] L'orario attuale e' 20:00
+[00:00] L'orario attuale e' 00:00
+[00:00] Impostato un timer per il dispositivo Lavatrice[1] dalle 10:00 alle 11:50
+
+[00:00] L'orario attuale e' 00:00
+[00:00] Impostato un timer per il dispositivo Lavatrice[1] dalle 10:00 alle 11:50
+
+[00:00] L'orario attuale e' 00:00
+[10:00] Il dispositivo 'Lavatrice [1]' si è acceso
+[10:30] L'orario attuale e' 10:30
+[10:30] L'orario attuale e' 10:30
+[11:50] Il dispositivo 'Lavatrice[1] si è spento
+[11:59] L'orario attuale e' 11:59
+[11:59] L'orario attuale e' 11:59
+[11:59] Impostato un timer per il dispositivo Lavatrice[1] dalle 18:00 alle 19:50
+
+[11:59] L'orario attuale e' 11:59
+[17:59] L'orario attuale e' 17:59
+[00:00] L'orario attuale e' 00:00
+[00:00] Impostato un timer per il dispositivo Lavatrice[1] dalle 10:00 alle 11:50
+
+[00:00] L'orario attuale e' 00:00
+[10:00] Il dispositivo 'Lavatrice [1]' si è acceso
+[10:30] L'orario attuale e' 10:30
+[10:30] L'orario attuale e' 10:30
+[11:50] Il dispositivo 'Lavatrice[1] si è spento
+[12:00] L'orario attuale e' 12:00
+[12:00] L'orario attuale e' 12:00
+[12:00] Impostato un timer per il dispositivo Lavatrice[1] dalle 18:00 alle 19:50
+
+[12:00] L'orario attuale e' 12:00
+[14:00] L'orario attuale e' 14:00
+[14:00] L'orario attuale e' 14:00
+[18:00] Il dispositivo 'Lavatrice [1]' si è acceso
+[19:50] Il dispositivo 'Lavatrice[1] si è spento
+[20:00] L'orario attuale e' 20:00
+[00:00] L'orario attuale e' 00:00 
+
+[00:00] L'orario attuale e' 00:00
+[09:00] L'orario attuale e' 09:00
+[09:00] L'orario attuale e' 09:00
+[18:00] Il dispositivo 'Lavatrice [1]' si è acceso
+[19:50] Il dispositivo 'Lavatrice[1] si è spento
+[20:00] L'orario attuale e' 20:00

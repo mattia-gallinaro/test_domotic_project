@@ -143,7 +143,6 @@ void ControlSystem::reset_time(){
 
 int ControlSystem::find_device_by_name(const std::string& name){
     int pos = -1;
-    std::cout << "Taglia di devices : "<< std::to_string(devices.size()) << std::endl;
     for(int i = 0; i < devices.size(); i++){
         if(devices[i]->get_name() == name){
             return i;
@@ -240,6 +239,7 @@ std::string ControlSystem::set_time_of_day(const std::string& time_to_reach){
     int i = 0;
     while(house_time <= end_time && house_time < 1440){ //1440 corrisponde alla mezzanotte del giorno successivo
         if(action_timestamp.size() > 0){
+                while(action_timestamp[i].time_action < house_time)i++;
                 while(i < action_timestamp.size() && action_timestamp[i].time_action == house_time){
                     if(action_timestamp[i].to_activate){
                         output += set_device_on(action_timestamp[i].name);
@@ -390,11 +390,11 @@ std::string ControlSystem::set_device_off(const std::string& name){
 
 void ControlSystem::add_action_to_vector(const std::string& name ,const int& time_act, bool action, bool destroyable){
     bool found = false;
-    for(auto i : action_timestamp){
-        if(i.name == name && action == i.to_activate){
-            i.time_action = time_act;
+    for(int i = 0; i < action_timestamp.size(); i++){
+        if(action_timestamp[i].name == name && action == action_timestamp[i].to_activate){
+            action_timestamp[i].time_action = time_act;
             found = true;
-            i.destoyable_action = destroyable;
+            action_timestamp[i].destoyable_action = destroyable;
             break;
         }
     }
