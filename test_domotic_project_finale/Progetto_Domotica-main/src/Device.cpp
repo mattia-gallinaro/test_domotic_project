@@ -1,9 +1,14 @@
+//AUTORE: DIEGO MARCHINI
+
 #include "Device.h"
 
 Device::~Device() = default;
 int Device::shared_IDs = 0;
 
-// member functions
+// MEMBER FUNCTIONS
+
+// funzione che spegne il dispositivo richiedendo come parametro il tempo corrente
+// restituisce una stringa utile per il log 
 std::string Device::setOff(unsigned int time){
     std::string s;
          if(state){
@@ -17,17 +22,19 @@ std::string Device::setOff(unsigned int time){
          return s;
 }
 
-
+//funzione che aggiunge al totale di energia già prodotta/consumata di un dato dispositivo, l'energia prodotta in un intervallo di funzionamento
 void Device::add_energy_consumed(void){
     double hours = ((double)(end_time - starting_time) / 60.0);
     tot_energy_consumed += energy_contribution * hours;
 };
 
+//funzione che resetta lo stato del dispositivo spegnendolo e portando a zero il valore dell'energia da esso consumata/prodotta
 void Device::reset_state(void){
     state = false;
     tot_energy_consumed = 0;
 }
-// getter functions
+// getter functions (descritte in Device.h)
+
 bool Device::get_status(void) const {
     return state;
 };
@@ -52,8 +59,9 @@ std::string Device::get_name(void) const {
     return ID;
 };
 
-// helper functions
+// HELPER FUNCTIONS
 
+//funzione usata per convertire un valore di tempo espresso in minuti in un orario nel formato HH:MM
 std::string convert_time(unsigned int time){
     std::string hours = std::to_string(time/60);
     if(std::stoi(hours) < 10) hours = "0" + hours;

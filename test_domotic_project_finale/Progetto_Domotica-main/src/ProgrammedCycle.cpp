@@ -1,16 +1,21 @@
+//AUTORE: DIEGO MARCHINI
+
 #include "ProgrammedCycle.h"
 
+//costruttore -> richiesti nome, apporto energetico e periodo di funzionamento
  ProgrammedCycle::ProgrammedCycle(std::string name_device, double contribution, unsigned int work_period){
         this->work_period = work_period;
         this->name = name_device;
         this->energy_contribution = contribution;
-        this->state = false;
-        this->starting_time = -1;
+        this->state = false; //dispositivo inizialmente spento
+        this->starting_time = -1; //valori che indicano che non è previsto per ora un accensione/spegnimento 
         this->end_time = -1;
-        this->tot_energy_consumed = 0;
+        this->tot_energy_consumed = 0; //alla costruzione il dispositivo non ha consumato/prodotto energia
         this->ID = shared_IDs++;
  }
  
+// funzione che accende il dispositivo richiedendo come parametro il tempo corrente
+// restituisce una stringa utile per il log 
 std::string ProgrammedCycle::setOn(unsigned int time){
         std::string s;
         if(!state){
@@ -23,20 +28,9 @@ std::string ProgrammedCycle::setOn(unsigned int time){
         else s = "Dispositivo '"+ name+ "["+ std::to_string(ID) + "]' già spento\n";
         return s;
 }
-/*
-std::string ProgrammedCycle::setOff(unsigned int time){//non serve fare controlli dell'orario perchè l'orario i sistema è già checkato nel main 
-         std::string s;
-         if(state){
-             end_time = time;
-             this->add_energy_consumed();
-             state = false;   
-             std::string time_log = convert_time(time);
-             s = "[" + time_log+"] Il dispositivo '"+ this + "' si è spento\n";   
-         }
-         else s = "Dispositivo "+ this + " già spento\n";
-         return s;
-  } 
-*/
+
+// funzione che imposta un timer di accensione richiedendo il tempo corrente e l'orariodi accesione
+// restituisce una stringa utile per il log
 std::string ProgrammedCycle::setTimer(unsigned int time, unsigned int start, unsigned int end){
      std::string s;
      std::string time_log = convert_time(time);
@@ -47,15 +41,18 @@ std::string ProgrammedCycle::setTimer(unsigned int time, unsigned int start, uns
      std::string start_log = convert_time(start);
      end_time = starting_time + work_period;
      std::string end_log;
-     if(end_time > 1439) end_log = convert_time(1439);
+     if(end_time > 1439) end_log = convert_time(1439);//non si oltrepassa la mezzanotte
      else end_log = convert_time(end_time);
      s = "[" + time_log + "] Impostato un timer per il dispositivo " + name+ "["+ std::to_string(ID) + "] dalle "+ start_log +" alle "+ end_log +"\n";
      return s;
 }
+
+// funzione che rimuove i timer dal dispositivo conservando il suo stato corrrente (acceso/spento)
+// restituisce una stringa utile per il log
 std::string ProgrammedCycle::reset_timer(unsigned int time){
         if(state){
             end_time = time;
-            this->add_energy_consumed();
+            this->add_energy_consumed();//sommo il valore dell'energia consumata/prodotta prima di resettare
             starting_time = time;
         }
         else{
