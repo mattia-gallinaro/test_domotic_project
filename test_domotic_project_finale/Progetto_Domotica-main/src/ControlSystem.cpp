@@ -227,6 +227,7 @@ int ControlSystem::convert_string_time(const std::string& name){
 std::string ControlSystem::set_time_of_day(const std::string& time_to_reach){
     std::string output = "";
     int end_time = convert_string_time(time_to_reach);
+    if(end_time <= house_time) throw std::invalid_argument("Non puoi impostare un tempo passato");
     int i = 0;
     while(house_time <= end_time && house_time < 1440){ //1440 corrisponde alla mezzanotte del giorno successivo
         if(action_timestamp.size() > 0){
