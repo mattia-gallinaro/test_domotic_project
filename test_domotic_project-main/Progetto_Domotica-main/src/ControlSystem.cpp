@@ -41,6 +41,7 @@ std::vector<std::string> ControlSystem::divide_input_string(const std::string& i
     switch(std::distance(std::find(commands.begin(), commands.end(), output[0]) , commands.end())){
         case 4:
         {
+            if(output.size() <= 2) throw std::invalid_argument("Il comando inserito non e' corretto");
             int last_pos = output.size() - 1;
             if(output[output.size() -1].find(":") != std::string::npos && output[output.size() -2].find(":") != std::string::npos) last_pos--;
             output[1] = put_together(output, 1, last_pos);
@@ -115,15 +116,16 @@ void ControlSystem::reset_all(){
     house_time = 0;
     impianto.setOff(house_time);
     for(auto i : devices){
-        i->setOff(house_time);
+        //i->setOff(house_time);
         i->reset_timer(house_time);
+        i->reset_state();
     }
     action_timestamp.erase(action_timestamp.begin(), action_timestamp.end());//rimuovo tutti i timer presenti
 }
 
 void ControlSystem::reset_timers(){
 
-    action_timestamp.erase(action_timestamp.begin(), action_timestamp.end());
+    action_timestamp.erase(action_timestamp.begin(), action_timestamp.end());//per rimuovere tutti i timer dei dispositivi
     for(auto i : devices){
         i->reset_timer(house_time);
         if(dynamic_cast<ProgrammedCycle*>(i) != nullptr && i->get_status()) add_action_to_vector( i->get_name(),house_time + dynamic_cast<ProgrammedCycle *>(i)->work_period, false, true);
@@ -197,7 +199,7 @@ std::string ControlSystem::show_all(){
     std::string energy_dev = std::to_string(energy_consumed);
     energy_dev.erase(energy_dev.begin());
     output = "["+ convert_time(house_time) + "] Attualmente il sistema ha prodotto (compresa la rete elettrica) " 
-            + std::to_string((impianto.get_energy_consumed() + rete_elettrica * (double)(house_time / 60))) 
+            + std::to_string((impianto.get_energy_consumed() + rete_elettrica * (double)(house_time / 60.0))) 
             + "kWh e consumato " + energy_dev + " kWh. Nello specifico: \n" + log_devices;
     return output;
 }
@@ -310,7 +312,7 @@ std::string ControlSystem::execute_command(const std::string& input){
                     std::string end_time = "";
                     if(command_inserted[command_inserted.size() - 2].find(':')!= std::string::npos){
                         end_time = start_time;
-                        start_time; command_inserted[command_inserted.size() - 2];
+                        start_time = command_inserted[command_inserted.size() - 2];
                     }
                     output += set_timer_device(command_inserted[1], start_time, end_time);
                 }
@@ -321,9 +323,10 @@ std::string ControlSystem::execute_command(const std::string& input){
                 if(command_inserted[command_inserted.size() - 1] == "on"){
                     output += set_device_on(command_inserted[1]);//funzione per attivare un dispostivo
                 }
-                else{
+                else if(command_inserted[command_inserted.size() - 1] == "off"){
                     output += set_device_off(command_inserted[1]);
                 }//funzione per disattivare un dispositivo
+                else throw std::invalid_argument("Il comando non esiste");
                 if(get_current_contribution() < 0) output += turn_off_devices();
             }
             break;
