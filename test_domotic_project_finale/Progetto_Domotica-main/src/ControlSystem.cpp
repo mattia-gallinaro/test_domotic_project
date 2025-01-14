@@ -117,7 +117,7 @@ void ControlSystem::reset_timers(){
     action_timestamp.erase(action_timestamp.begin(), action_timestamp.end());//per rimuovere tutti i timer dei dispositivi
     for(auto i : devices){
         i->reset_timer(house_time);
-        if(dynamic_cast<ProgrammedCycle*>(i) != nullptr && i->get_status()) add_action_to_vector( i->get_name(),house_time + dynamic_cast<ProgrammedCycle *>(i)->work_period, false, true);
+        if(dynamic_cast<ProgrammedCycle*>(i) != nullptr && i->get_status()) add_action_to_vector( i->get_name(),house_time + dynamic_cast<ProgrammedCycle *>(i)->get_work_period(), false, true);
     }
 }
 
@@ -153,7 +153,7 @@ std::string ControlSystem::remove_timer(const std::string& name){
     if(pos != -1){// se lo trovo allora in pos ho la posizione nell'array del dispositivo richiesto
         output = devices[pos]->reset_timer(house_time);
         remove_action(devices[pos]->get_name());
-        if(dynamic_cast<ProgrammedCycle*>(devices[pos]) != nullptr) add_action_to_vector(devices[pos]->get_name(), dynamic_cast<ProgrammedCycle*>(devices[pos])->work_period + house_time, false, true);
+        if(dynamic_cast<ProgrammedCycle*>(devices[pos]) != nullptr) add_action_to_vector(devices[pos]->get_name(), dynamic_cast<ProgrammedCycle*>(devices[pos])->get_work_period() + house_time, false, true);
         return output;
     }
     else{throw std::invalid_argument("Il nome inserito non è corretto");}
@@ -202,7 +202,7 @@ std::string ControlSystem::set_device_on(const std::string& name){
     int pos = find_device_by_name(name);
     if(pos == -1)throw std::invalid_argument("Il nome inserito non è presente tra i dispositivi disponibili");
     else{
-        if(!devices[pos]->get_status() && dynamic_cast<ProgrammedCycle*>(devices[pos]) != NULL) add_action_to_vector(devices[pos]->get_name(),house_time + dynamic_cast<ProgrammedCycle *>(devices[pos])->work_period, false, true);
+        if(!devices[pos]->get_status() && dynamic_cast<ProgrammedCycle*>(devices[pos]) != nullptr) add_action_to_vector(devices[pos]->get_name(),house_time + dynamic_cast<ProgrammedCycle *>(devices[pos])->get_work_period(), false, true);
         output = devices[pos]->setOn(house_time);
         order_devices(pos);
         if(get_current_contribution() <= 0) output += turn_off_devices();
@@ -262,12 +262,11 @@ std::string ControlSystem::set_timer_device(const std::string& name , const std:
         output = impianto.setTimer(house_time, start_time, end_time);
         add_action_to_vector(impianto.get_name(), start_time, true, false);
         if(end_time != -1)add_action_to_vector(impianto.get_name(), end_time, false , false);
-        std::cout << action_timestamp.size() <<std::endl;
         return output;
     }
     int pos = find_device_by_name(name);
     if(pos == -1) throw std::invalid_argument("Il dispositivo richiesto non esite");
-    if(end_time == 2000 && dynamic_cast<ProgrammedCycle*>(devices[pos]) != nullptr)end_time = start_time + dynamic_cast<ProgrammedCycle *>(devices[pos])->work_period;
+    if(end_time == 2000 && dynamic_cast<ProgrammedCycle*>(devices[pos]) != nullptr)end_time = start_time + dynamic_cast<ProgrammedCycle *>(devices[pos])->get_work_period();
     if(end_time == 2000 ){
         output = devices[pos]->setTimer(house_time, start_time);
         add_action_to_vector(devices[pos]->get_name(), start_time, true);
