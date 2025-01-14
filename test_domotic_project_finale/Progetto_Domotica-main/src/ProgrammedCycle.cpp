@@ -63,3 +63,9 @@ std::string ProgrammedCycle::reset_timer(unsigned int time){
         std::string s = "["+ time_log +"] Rimosso il timer dal dispositivo '"+ name+ "["+ std::to_string(ID) + "]'\n";
         return s;
 }
+
+//GETTER FUNCTIONS (descritte in ProgrammedCycle.h)
+
+unsigned int ProgrammedCycle::get_work_period(void) const {
+    return work_period;
+}
